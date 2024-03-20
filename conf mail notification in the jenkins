@@ -1,0 +1,35 @@
+conf mail notification in the jenkins---
+
+Steps to set up email notification in Jenkins:
+1. Create App Password in Google Account:
+o Log in to your Google account.
+o Navigate to the security settings.
+o click on 2 step verification & go at the end
+o Look for the option to create an App Password.
+o Generate a new App Password and note it down. This will be used for
+SMTP authentication in Jenkins.
+
+2. Configure Email Notification in Jenkins:
+o Log in to your Jenkins dashboard.
+o Go to "Manage Jenkins" from the sidebar.
+o Select "Configure System".
+o Locate the section for "E-mail Notification" and "Extended E-mail" Notification".
+
+3. SMTP Configuration:
+o In the SMTP server field, enter smtp.gmail.com.
+o Set the SMTP port to 465.
+o Ensure that SSL is checked to enable secure communication.
+
+4. Credentials:
+o Under the SMTP Authentication section, select "Use SMTP
+Authentication".
+o Enter your Google email address in the "User Name" field.
+o Use the App Password generated earlier as the "Password". (do this o both - "E-mail Notification" and "Extended E-mail"
+
+5. Test Configuration:
+o Scroll down to the bottom of the configuration page.
+o Click on the "Test configuration by sending test e-mail" button.
+o Verify that you receive the test email in your inbox.
+
+6. Save Changes:
+o Once the test email is successfully sent and received, click on save to apply the changes.
